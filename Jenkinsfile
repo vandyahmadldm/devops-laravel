@@ -14,6 +14,7 @@ node {
     stage("Build"){
         docker.image('ubuntu').inside('-u root') {
             sh 'echo "Ini adalah test"'
+            sh 'echo kedua'
         }
     }
   
